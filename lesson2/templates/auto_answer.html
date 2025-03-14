@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="static/css/style.css">
+<h4>И на Марсе будут яблони цвести!</h4>
+<div>Фамилия: {{params["surname"]}}</div>
+<div>Имя: {{params["name"]}}</div>
+<div>Образование: {{params["edu"]}}</div>
+<div>Профессия: {{params["prof"]}}</div>
+<div>Пол: {{params["sex"]}}</div>
+<div>Мотивация: {{params["mot"]}}</div>
+<div>Готовы остаться на марсе? {{params["ready"]}}</div>
+{% endblock %}
