@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="static/css/style.css">
+<h4>И на Марсе будут яблони цвести!</h4>
+<h1>Размещение по каютам</h1>
+{% for name in params %}
+{% if loop.first %}
+<div>{{name}} - Каюта № {{loop.index}} - капитан корабля</div>
+{% else %}
+<div>{{name}} - Каюта № {{loop.index}}</div>
+{% endif %}
+{% endfor %}
+{% endblock %}
